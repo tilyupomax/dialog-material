@@ -1,0 +1,12 @@
+{{data.name}}
+<div>
+  <mat-form-field>
+    <mat-label>Введите название питомца</mat-label>
+    <input [(ngModel)]="data.animal" matInput>
+  </mat-form-field>
+</div>
+
+<div class="button">
+  <button mat-button (click)="onClick()">Отправить</button>
+  <button mat-button (click)="onNoClick()">Закрыть</button>
+</div>
